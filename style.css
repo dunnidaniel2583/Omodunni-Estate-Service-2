@@ -1,0 +1,222 @@
+    /* Basic Reset & Fonts */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #FAF7F2;
+      color: #333333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 2px solid #E76F51;
+    }
+    header h1 {
+      margin: 0;
+      color: #1D3557;
+    }
+    nav a {
+      color: #1D3557;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #E76F51;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #1D3557;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: #555555;
+    }
+    .hero button {
+      background-color: #E76F51;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .hero button:hover {
+      background-color: #d65a3c;
+    }
+
+    /* About Section */
+    .about {
+      max-width: 600px;
+      margin: 0 auto 50px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #444444;
+      text-align: center;
+    }
+
+    /* Contact Form */
+    form {
+      max-width: 500px;
+      margin: 0 auto 60px;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: #1D3557;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    form textarea {
+      height: 100px;
+    }
+    form input[type="checkbox"] {
+      margin-right: 8px;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    form .checkbox-label {
+      font-weight: normal;
+      color: #555555;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    form button {
+      background-color: #E76F51;
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+    form button:hover {
+      background-color: #d65a3c;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px 10px;
+      border-top: 2px solid #E76F51;
+      color: #777777;
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+        width: 180px; /* Try 160px or 150px too if 180 is still too big */
+        height: auto;
+        display: block;
+        margin: 10px 0;
+    }
+
+
+    .social-cion {
+        color: white;
+        transition: color 0.3s ease;
+        font-size: 28px;
+    }
+
+    .social-cion a:hover {
+        color: #1D3557;
+    }
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+
+  .about {
+    font-size: 1rem;
+    margin: 0 10px 40px;
+  }
+
+  form {
+    padding: 20px 15px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 80px;
+  }
+}

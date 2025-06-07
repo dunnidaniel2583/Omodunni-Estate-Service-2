@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Omodunni Estate Servcies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon 3.png">
+    <img class="logo" src="omodunni.png" alt="omodunni Estate">
+   <body>
+     <header>
+    <h1>Omodunni Estate Servcies</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Find Your Perfect Home with Omodunni Estate Servcies</h2>
+    <p>Reliable rentals, personal touch.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Contact Us</button>
+  </section>
+
+  <section class="about">
+    <p>Looking to rent a home? We make it simple and stress-free. Pets are welcome too — just let us know! Your perfect place is waiting.</p>
+  </section>
+
+  <section id="contact">
+    <form name="contact"  netlify>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="petsAllowed" />
+        Pets allowed?
+      </label>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; Omodunni Esates Servcies | Contact: +234 800 123 4567 | Email: bamideleomodunni@gmail.com
+
+    <div class="social-icons">
+        <h4>Follow Us</h4>
+        <a href="#"><li class="fab fa-facebook"></li></a>
+        <a href="#"><li class="fab fa-pinterest"></li></a>
+        <a href="#"><li class="fab fa-twitter"></li></a>
+        <a href="#"><li class="fab fa-instagram"></li></a>
+    </div>
+  </footer>
+</body>
+</html>
